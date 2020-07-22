@@ -1,0 +1,274 @@
+.animated {animation-duration: 0.2s;}
+.player{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: #eee;
+    padding-top: 64px;
+}
+.pheader{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 100;
+    height: 44px;
+    top: 0;
+    left: 0;
+}
+.pheader span img{
+    width: 26px;
+    height: 26px;
+}
+.pheader-song{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height: 40px;
+}
+.pheader-title{
+    display: block;
+    margin: 0 42px;
+    overflow: hidden;
+    color: white;
+}
+.pheader-singer{
+    margin-left: 42px;
+    color: #fff;
+}
+.pheader-goback,.pheader-share{
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+}
+.pheader-goback{
+    left: 0;
+    margin-left: 10px;
+}
+.pheader-share{
+    right: 10px;
+}
+.pheader-singer{
+    font-size: 13px;
+}
+
+.pshow{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.pshow-top{
+    width: 100%;
+    height: 75%;
+    z-index: 100;
+    overflow: hidden;
+    /* 隐藏歌词 */
+}
+.nolyric{
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+}
+
+/*播放show*/
+.pshow-top-song{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+}
+.pshow-top-songimg{
+    position: relative;
+    width: 70%;
+    height: 0;
+    border: 10px solid rgba(255,255,255,0.2);    
+    padding-bottom: 70%;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 9%;
+    text-align: center;
+    overflow: hidden;
+}
+@-webkit-keyframes rotate{
+        from { -webkit-transform:rotate(0deg) }
+        to { -webkit-transform:rotate(360deg) }
+}
+.pshow-top-songimg img{
+    width: 75%;
+    height: auto;
+    max-height: 250px;
+    margin-top: 15%;
+    border-radius: 50%; 
+}
+.pshow-top-border{
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    border-radius: 50%; 
+    overflow: hidden;
+    background: url('../../assets/img/playborder.png') no-repeat;
+    background-position:-5px -7px;
+    background-size: 102%;
+    top: -3px;
+    left: -3px;
+}
+.pshow-top-songtag{
+    width: 92%;
+    padding: 0 4%; 
+    position: absolute;
+    top: 80%;
+    left: 0;
+    text-align: center;
+}
+.pshow-top-songtag span{
+    display: inline-block;
+    width: 23%;
+}
+.pshow-top-songtag span img{
+    width: 28px;
+    height: 28px;
+}
+.commentCount{
+    position: relative;
+    font-size: 10px;
+    top: -20px;
+    left: -3px;
+}
+.pshow-top-songword{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #eee;
+}
+.songword-box{
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;    
+}
+.songword-box ul{
+    width: 100%;
+}
+.songword-box ul li{
+    padding: 10px 0;
+}
+.play-bottom{
+    width: 100%;
+}
+.play-bottom-progress{
+    width: 94%;
+    position: relative;
+    padding: 10px 3%;
+}
+.progress-current,.progress-total{
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    width: 10%;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+}
+.progress-current{
+    left: 1.5%;
+}
+.progress-total{
+    right: 1.5%;
+}
+.progress-box{
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    position: relative;
+    background-color: rgba(0,0,0,.3);
+}
+.progress-box-go{
+    width: 0;
+    height: 100%;
+    background-color: #f31c0c;
+}
+.progress-box-dot{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+.dot{
+    position: relative;
+    top: 9px;
+    left: 0;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border: 5px solid #f1f1f1;
+    border-radius: 50%;
+    background: #d44439;
+}
+/* 歌曲tab */
+.play-bottom-tabBox{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.play-bottom-tab{
+    width: 100%;
+    overflow: hidden;
+}
+.play-bottom-tab div{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.play-bottom-tab div img{
+    width: 31px;
+    height: 31px;
+}
+.play-bottom-tab .playing img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 0;
+    top: -3px;
+}
+
+
+.player-mask{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+}
+.player-maskbg{
+    z-index: -3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    -o-filter: blur(20px);
+    filter: blur(20px);
+}
+.player-maskbg2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: -2;
+}

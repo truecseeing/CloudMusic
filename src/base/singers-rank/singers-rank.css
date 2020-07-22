@@ -1,0 +1,32 @@
+.rank-list{
+    width: 100%;
+    margin-top: .1rem;
+}
+.rank-list-ul{
+    width: 100%;
+}
+.rank-list-ul li{
+    width: 100%;
+    position: relative;
+    display: flex;
+    font-size: 17px;
+    margin-bottom: .05rem;
+}
+.rank-num{
+    width: 10%;
+    text-align: center;
+    line-height: .6rem;
+}
+.rank-li-img img{
+    width: .6rem;
+    height: .6rem;
+    vertical-align: middle;
+    margin: 0 .1rem;
+}
+.rank-li-text{
+    flex: 1;
+    flex-wrap: nowrap;
+}
+.rank-li-text span{
+    display: block;
+}

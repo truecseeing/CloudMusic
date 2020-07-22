@@ -1,0 +1,90 @@
+.rank-offcial{
+    width: 100%;
+    overflow: hidden;
+}
+.rank-offcial-title,.rank-global-title{
+    display: block;
+    color: black;
+    padding: 0.1rem 0.1rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+.rank-offcial-box{
+    width: 100%;
+}
+.rank-offcial-speedup{
+    width: 100%;
+    padding: 0.04rem 0;
+    margin-left: 0.1rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #d9d9d9;
+}
+.speedup-left,.speedup-right{
+    float: left;
+    width: 50%;
+}
+.speedup-left{
+    position: relative;
+}
+.speedup-left-updatetime{
+    position: absolute;
+    bottom: 0.05rem;
+    left: 0.05rem;
+    color: white;
+    font-size: 0.11rem;
+}
+.speedup-left,.speedup-left img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.speedup-right{
+    margin-left: 0.1rem;
+}
+.speedup-right-ul{
+    width: 100%;
+}
+.speedup-right-ul li{
+    width: 92%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.13rem;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.rank-global,.rank-global-box{
+    width: 100%;
+}
+.global-row{
+    width: 98%;
+    overflow: hidden;
+    padding-left: 2%; 
+}
+.electro{
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 0.1rem;
+}
+.electro-img{
+    width: 100%;
+    position: relative;
+}
+.electro img{
+    width: 100%;
+    height: auto;
+}
+.electro-title{
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    padding: 0.02rem 0 0.02rem 0.05rem;
+    font-size: 0.12rem;
+}
+.hotnum{
+    width: 0.25rem;
+    height: 0.25rem;
+    position: relative;
+    top: 0.05rem;
+    left: 0.05rem;
+}
