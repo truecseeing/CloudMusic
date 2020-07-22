@@ -80,7 +80,7 @@ audio.play();
 ```
 
 3. Vuex    
-[vuex的学习笔记](https://github.com/echoFR/VueJs/blob/master/vuex/Vuex.md)
+
 - 关联的数据
 > 初始歌单列表、当前播放歌单列表、播放歌曲的序号、播放的状态（暂停|播放）、播放的模式（单曲|随机| 顺序）
 - 异步的处理：在action里面异步执行
@@ -166,5 +166,5 @@ export function changeFont(){
 - touchmove: 获取进度条移动后的横坐标，计算比例
 - touchend：改变当前播放时间
 
-[Vue学习的一些笔记](https://github.com/echoFR/VueJs)
+
 
